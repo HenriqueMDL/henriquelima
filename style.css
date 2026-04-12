@@ -1,34 +1,16 @@
-html, body {
-    height: 100%;
+h2 {
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    width: 100%;
 }
 
-body {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+section {
+    width: 100%;
+    text-align: left;
 }
 
-body.dark {
-    background-color: dimgray;
-}
-
-.card {
-    align-items: center;
-    border: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    padding: 20px;
-}
-
-.dark .card {
-    background-color: black;
-    color: white;
-}
-
-.thumbnail {
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
+hr {
+    width: 100%;
+    margin: 20px 0;
 }
