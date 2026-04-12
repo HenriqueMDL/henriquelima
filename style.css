@@ -1,16 +1,58 @@
-h2 {
-    margin-top: 20px;
-    border-bottom: 1px solid gray;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estrutura principal */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar esquerda */
+.sidebar {
+    background-color: #2f4f4f;
+    color: white;
+    width: 30%;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    border-bottom: 1px solid white;
     padding-bottom: 5px;
-    width: 100%;
+    margin-top: 20px;
 }
 
-section {
-    width: 100%;
-    text-align: left;
+.sidebar ul {
+    padding-left: 20px;
 }
 
-hr {
-    width: 100%;
-    margin: 20px 0;
+/* Foto */
+.foto {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Conteúdo direito */
+.content {
+    width: 70%;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.content h1 {
+    color: #2f4f4f;
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+}
+
+.content h2 {
+    margin-top: 30px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+}
+
+.content ul {
+    padding-left: 20px;
 }
