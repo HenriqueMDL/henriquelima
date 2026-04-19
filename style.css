@@ -3,7 +3,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 
-    /* IMAGEM DE FUNDO */
     background-image: url("img/fundo.webp");
     background-size: cover;
     background-position: center;
