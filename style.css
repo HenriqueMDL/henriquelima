@@ -131,12 +131,8 @@ section, .sidebar h2, .sidebar p, .sidebar ul {
 }
 
 section ul {
-    list-style: none; /* remove bolinhas */
+    list-style: none;
     padding-left: 0;
-}
-
-section ul li {
-    margin-bottom: 12px;
 }
 
 section ul li a {
@@ -165,8 +161,4 @@ section ul li {
 section ul li:hover {
     background: rgba(0, 0, 0, 0.6);
     transform: translateX(5px);
-}
-
-section h2 {
-    margin-bottom: 15px;
 }
