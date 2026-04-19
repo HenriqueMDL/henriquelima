@@ -1,8 +1,9 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    color: white;
 
+    /* FUNDO */
     background-image: url("img/fundo.webp");
     background-size: cover;
     background-position: center;
@@ -10,11 +11,12 @@ body {
     background-attachment: fixed;
 }
 
+/* OVERLAY ESCURO */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 
@@ -26,49 +28,41 @@ body::before {
 .sidebar {
     width: 30%;
     padding: 20px;
-    color: white;
-    background-color: rgba(47, 79, 79, 0.9);
-}
-
-.sidebar h2 {
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
-    margin-top: 20px;
-}
-
-.sidebar ul {
-    padding-left: 20px;
-}
-
-.foto {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    background: transparent;
 }
 
 .content {
     width: 70%;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background: transparent;
+
+    backdrop-filter: blur(6px);
     border-radius: 10px;
-    margin: 20px;
 }
 
-.content h1 {
-    color: #2f4f4f;
-    border-bottom: 4px solid black;
+.foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    border-bottom: 3px solid white;
     padding-bottom: 10px;
 }
 
-.content h2 {
+h2 {
     margin-top: 30px;
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
     padding-bottom: 5px;
 }
 
-.content ul {
+ul {
     padding-left: 20px;
 }
-.content ul {
-    padding-left: 20px;
+
+h1, h2, h3, p, li {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
