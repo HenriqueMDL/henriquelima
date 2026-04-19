@@ -1,20 +1,34 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+
+    /* IMAGEM DE FUNDO */
+    background-image: url("img/fundo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* Estrutura principal */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
 .container {
     display: flex;
     min-height: 100vh;
 }
 
-/* Sidebar esquerda */
 .sidebar {
-    background-color: #2f4f4f;
-    color: white;
     width: 30%;
     padding: 20px;
+    color: white;
+    background-color: rgba(47, 79, 79, 0.9);
 }
 
 .sidebar h2 {
@@ -27,18 +41,18 @@ body {
     padding-left: 20px;
 }
 
-/* Foto */
 .foto {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-/* Conteúdo direito */
 .content {
     width: 70%;
     padding: 30px;
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .content h1 {
@@ -53,6 +67,9 @@ body {
     padding-bottom: 5px;
 }
 
+.content ul {
+    padding-left: 20px;
+}
 .content ul {
     padding-left: 20px;
 }
