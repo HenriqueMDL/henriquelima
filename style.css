@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     color: white;
 
-    /* FUNDO */
     background-image: url("img/fundo.webp");
     background-size: cover;
     background-position: center;
@@ -11,7 +10,6 @@ body {
     background-attachment: fixed;
 }
 
-/* OVERLAY ESCURO */
 body::before {
     content: "";
     position: fixed;
@@ -36,8 +34,6 @@ body::before {
     padding: 30px;
     background: transparent;
 
-    backdrop-filter: blur(6px);
-    border-radius: 10px;
 }
 
 .foto {
