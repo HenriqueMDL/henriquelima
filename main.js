@@ -1,8 +1,3 @@
-// Ao carregar a página, verifica se o usuário salvou algum tema
-// Se sim, aplica o tema salvo
-// Se não, deixa o tema padrão
-
-// Como eu detecto quando a página carregou?
 document.addEventListener("DOMContentLoaded", function() {
     const savedTheme = localStorage.getItem("theme");
 
@@ -11,24 +6,27 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
-// Como eu detecto quando alguem clica no button?
-// Ao clicar no button, disparo uma função
-// Preciso verificar se body possui a classe dark
-// Se tiver, eu removo a classe dark
-// Se não tiver, eu adiciono a classe dark
-
 const btnChangeTheme = document.getElementById("changeTheme");
 
-btnChangeTheme.onclick = function() {
-    const body = document.body;
+if (btnChangeTheme) {
+    btnChangeTheme.onclick = function() {
+        const body = document.body;
 
-    // precisamos salvar o tema que o usuário selecionou
-    if ( body.classList.contains("dark") ) {
-        body.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-    } else {
-        body.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-    }
+        if (body.classList.contains("dark")) {
+            body.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+        } else {
+            body.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+        }
+    };
 }
+
+window.addEventListener("scroll", function() {
+    const bg = document.querySelector(".parallax-bg");
+
+    if (bg) {
+        let scroll = window.scrollY;
+        bg.style.transform = `translateY(${scroll * 0.4}px)`;
+    }
+});
