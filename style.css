@@ -129,17 +129,3 @@ section, .sidebar h2, .sidebar p, .sidebar ul {
 .diplomas a:hover {
     text-decoration: underline;
 }
-
-section ul {
-    list-style: none;
-}
-
-section ul li a {
-    color: #9adfff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section ul li a:hover {
-    text-decoration: underline;
-}
