@@ -105,7 +105,7 @@ h1, h2, h3, p, li {
 
 section, .sidebar h2, .sidebar p, .sidebar ul {
     background: rgba(0, 0, 0, 0.4);
-    display: inline-block;
+    display: block;
     padding: 8px 12px;
     border-radius: 8px;
     margin-bottom: 10px;
