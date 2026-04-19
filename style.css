@@ -5,6 +5,14 @@ body {
 
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
 .header {
     text-align: center;
     margin-top: 30px;
@@ -96,7 +104,7 @@ h1, h2, h3, p, li {
 }
 
 section, .sidebar h2, .sidebar p, .sidebar ul {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     display: block;
     padding: 8px 12px;
     border-radius: 8px;
@@ -105,9 +113,18 @@ section, .sidebar h2, .sidebar p, .sidebar ul {
 .content {
         background: linear-gradient(
         to right,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.2),
         rgba(0,0,0,0)
     );
     padding: 30px;
+}
+
+.diplomas a {
+    color: #9adfff;
+    text-decoration: none;
+}
+
+.diplomas a:hover {
+    text-decoration: underline;
 }
