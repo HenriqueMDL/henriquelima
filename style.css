@@ -39,6 +39,7 @@ body::before {
 .sidebar {
     width: 33%;
     padding: 20px;
+    min-width: 250px;
 }
 
 .sidebar h2 {
@@ -47,7 +48,7 @@ body::before {
 }
 
 .contato p {
-    display: inline-block;
+    display: block;
     margin-right: 10px;
     margin-bottom: 5px;
 }
