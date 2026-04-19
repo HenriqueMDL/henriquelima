@@ -110,6 +110,7 @@ section, .sidebar h2, .sidebar p, .sidebar ul {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 .content {
         background: linear-gradient(
         to right,
@@ -127,4 +128,45 @@ section, .sidebar h2, .sidebar p, .sidebar ul {
 
 .diplomas a:hover {
     text-decoration: underline;
+}
+
+section ul {
+    list-style: none; /* remove bolinhas */
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 12px;
+}
+
+section ul li a {
+    color: #9adfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+section ul li span {
+    margin-left: 8px;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+section ul li {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+section ul li:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateX(5px);
+}
+
+section h2 {
+    margin-bottom: 15px;
 }
