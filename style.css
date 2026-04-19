@@ -41,18 +41,31 @@ body::before {
     padding: 20px;
 }
 
+.sidebar h2 {
+    display: block;
+    margin-top: 20px;
+}
+
+.contato p {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
 .content {
     width: 33%;
     padding: 30px;
     max-width: 900px;
     margin-left: auto;
-    background: linear-gradient(
-        to right,
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0)
-    );
-    padding: 30px;
 }
 
 h1 {
@@ -95,4 +108,13 @@ section, .sidebar h2, .sidebar p, .sidebar ul {
     padding: 8px 12px;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+.content {
+        background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0)
+    );
+    padding: 30px;
 }
