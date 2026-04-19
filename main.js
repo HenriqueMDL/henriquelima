@@ -27,6 +27,6 @@ window.addEventListener("scroll", function() {
 
     if (bg) {
         let scroll = window.scrollY;
-        bg.style.transform = `translateY(${scroll * 0.4}px)`;
+        bg.style.transform = `translateY(-${scroll * 0.2}px)`;
     }
 });
