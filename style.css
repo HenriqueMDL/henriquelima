@@ -42,6 +42,7 @@ body::before {
 .content {
     width: 70%;
     padding: 30px;
+    max-width: 900px;
 }
 
 h1 {
@@ -78,8 +79,20 @@ h1, h2, h3, p, li {
     z-index: -2;
 }
 
-.content, .sidebar {
+section, .sidebar h2, .sidebar p, .sidebar ul {
     background: rgba(0, 0, 0, 0.4);
-    padding: 20px;
-    border-radius: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.content {
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0)
+    );
+    padding: 30px;
 }
